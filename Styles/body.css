@@ -1,0 +1,18 @@
+p {
+  margin: 0px;
+  color: white;
+}
+
+body {
+  /* This style below will be inherited. */
+  padding-bottom: 200px;
+  padding-top: 80px;
+  padding-left: 95px;
+  background-color: black;
+  padding-right: 24px;
+  font-family: Roboto, Arial;
+}
+
+a:link {
+  text-decoration: none;
+}

@@ -1,0 +1,87 @@
+.sidebar {
+  z-index: 200;
+  position: fixed;
+  top: 63px;
+  background-color: black;
+  width: 72px;
+  bottom: 0;
+  left: 0;
+  padding-top: 5px;
+  padding-left: 4px;
+}
+
+.sidebar-link {
+  transition: background-color 0.15s;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* vertical column direction */
+}
+
+.sidebar-link:hover {
+  background-color: rgba(90, 90, 90, 0.336);
+  cursor: pointer;
+  border-radius: 14px;
+}
+
+.sidebar img { /* selector for all "img" elements in sidebar-link-div */
+  height: 24px;
+  margin-bottom: 5px;
+  margin-top: 12px;
+}
+
+.sidebar p {
+  margin-bottom: 12px;
+}
+
+.sidebar-link div {
+  font-family: Roboto, Arial;
+  font-size: 10px;
+}
+
+@media (min-width: 1500px) { /*  Only apply the CSS code below when screen width is between 0px - 600px. */
+  .sidebar {
+  z-index: 200;
+  position: fixed;
+  top: 63px;
+  background-color: black;
+  width: 230px;
+  bottom: 0;
+  left: 0;
+  padding-top: 5px;
+  padding-left: 20px;
+  }
+
+  .sidebar-link {
+    transition: background-color 0.15s;
+    height: 84px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: row; /* vertical column direction */
+  }
+
+  .sidebar-link:hover {
+    background-color: rgba(90, 90, 90, 0.336);
+    cursor: pointer;
+    border-radius: 14px;
+  }
+
+  .sidebar img { /* selector for all "img" elements in sidebar-link-div */
+    height: 24px;
+    margin: 0;
+    margin-right: 50px;
+    margin-left: 10px;
+  }
+
+  .sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
+  }
+
+  .sidebar p {
+    margin: 0;
+    margin-left: 10px;
+  }
+}

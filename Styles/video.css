@@ -1,0 +1,162 @@
+.video-grid {
+  position: static; /*  This element will appear at the back since it's  position:static */ 
+}
+
+.thumbnail {
+  width: 100%; /* only width/height also changes height automatically */
+  /* object-fit: contain;
+  object-position: top;
+  border: 2px solid black; */
+  border-radius: 16px;
+  transition: border-radius 0.1s;
+}
+
+.video-preview {
+  transition: background-color 0.3s, padding 0.3s;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.video-preview:hover {
+  cursor: pointer;
+  background-color: rgba(175, 175, 175, 0.144);
+  border-radius: 10px;
+}
+
+.video-preview:hover .thumbnail{
+  border-radius: 0px;
+}
+
+.video-time {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.705);
+  color: white;
+  right: 12px;
+  bottom: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px;
+  border-radius: 8px;
+}
+
+.channel-div {
+  width: 50px;
+  vertical-align: top;
+}
+
+.video-title {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.video-info {
+  width: 240px;
+}
+
+.channel-pfp {
+  width: 36px;
+  border-radius: 50%;
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-author,
+.video-stats {
+  color: rgb(170, 170, 170);
+  font-size: 12px;
+}
+
+.video-author {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.video-author:hover {
+  color: rgb(228, 228, 228);
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 42px;
+  column-gap: 16px;
+}
+
+.channel-pfp-container {
+  position: relative;
+}
+
+.channel-pfp-container:hover .channel-pfp-tooltip {
+  opacity: 1;
+}
+
+.channel-pfp-tooltip {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 40px 210px;
+  background-color: black;
+  width: 220px;
+  height: 50px;
+  padding: 10px;
+  box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2);
+  top: 45px;
+  left: 10px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.channel-pfp-tooltip p {
+  margin: 0;
+  margin-left: 10px;
+  line-height: 22px;
+}
+
+.channel-pfp-tooltip img {
+  margin-top: 4px;
+}
+
+
+@media (max-width: 1000px) { /*  Only apply the CSS code below when screen width is between 0px - 600px. */
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1499) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 2499px) { /*  Only apply the CSS code below when screen width is between 0px - 600px. */
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  body {
+    padding-left: 270px;
+  }
+}
+
+@media (min-width: 2500px) { /*  Only apply the CSS code below when screen width is between 0px - 600px. */
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  body {
+    padding-left: 270px;
+  }
+}
+

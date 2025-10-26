@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      YouTube
+    </title>
+    <link rel="icon" type="image/x-icon" href="Icons/favicon-youtube.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/body.css">
+    <link rel="stylesheet" href="Styles/video.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/sidebar.css">
+  </head>
+  <body>
+    <header class="header"> <!-- Semenetic elements that work the same way as  <div>. However, they also give the HTML meaning when screen readers, search engines or other devices read the website. -->
+      <div class="left-section">
+        <img class="hamburger-menu" src="Icons/icon-burger-menu.png" alt="hamburger-menu">
+        <img class="youtube-logo" src="Icons/icon-youtubelogo.png" alt="youtube-logo">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="search" placeholder="Search"> <!-- inline block element, only takes up as much space as needed -->
+        <button class="search-button">
+          <img class="search-icon" src="Icons/icon-search.png" alt="search-icon">
+          <div class="tooltip">
+            Search
+          </div>
+        </button> <!-- Put Position Absolute inside Position Relative for Tooltip -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="Icons/icon-microphone.png" alt="voice-search-icon">
+          <div class="tooltip">
+            Search with your voice
+          </div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="Icons/icon-yoputubecreate.png" alt="upload-icon">
+          <div class="tooltip">
+            Create
+          </div>
+        </div>
+        <div class="youtube-apps-container">
+          <img class="youtube-apps-icon" src="Icons/icon-youtubeapps.png" alt="youtube-apps-icon">
+          <div class="tooltip">
+            YouTube apps
+          </div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="Icons/icon-notifcation.png" alt="notifications-icon">
+          <div class="notifications-count">
+            3
+          </div>
+          <div class="tooltip">
+            Notifications
+          </div>
+        </div>
+        <img class="current-user-picture" src="Images/Channel-Icons/my-channel.jpeg"> 
+      </div>
+    </header>
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="Icons/home-icon.svg">
+        <div>
+          <p>
+            Home
+          </p>
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/icon-user-you.png">
+        <div>
+          <p>
+            You
+          </p>
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/icon-download.png">
+        <div>
+          <p>
+            Download
+          </p>
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/icon-youtubeoriginals.png">
+        <div>
+          <p>
+            Originals
+          </p>
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/icon-youtubemusic.png">
+        <div>
+          <p>
+            YouTube Music
+          </p>
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/icon-videogallery.png">
+        <div>
+          <p>
+            Library
+          </p>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+              <img class="thumbnail" src="Images/Thumbnails/thumbnail-1.webp" alt="thumbnail-1"/>
+              <div class="video-time">14:20</div>
+            </a>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <a href="https://www.youtube.com/c/mkbhd" target="_blank">
+                <div class="channel-pfp-container">
+                  <img class="channel-pfp" src="Images/Channel-Icons/channel-1.jpeg" alt="channel-icon-1">
+                  <div class="channel-pfp-tooltip">
+                    <img class="channel-pfp" src="Images/Channel-Icons/channel-1.jpeg" alt="channel-icon-1">
+                    <p>
+                      <strong>Marques Brownlee</strong> <br>
+                      <span style="color: rgb(170, 170, 170);">15M subscribers</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="video-info">
+              <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+                <div class="title-div">
+                  <p class="video-title">
+                    Talking Tech and AI with Google CEO Sundar Pichai!
+                  </p> <!-- block element by default, takes up the entitre line/container -->
+                </div>
+              </a>
+              <div class="author-div">
+                <a href="https://www.youtube.com/c/mkbhd" target="_blank">
+                  <p class="video-author">
+                    Marques Brownlee &checkmark;
+                  </p> <!-- inline element, e.g. "<strong>...</strong>" - appear within line of text -->
+                </a>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  3&period;4M views &middot; 6 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank">
+              <img class="thumbnail" src="Images/Thumbnails/thumbnail-2.webp" alt="thumbnail-2"/>
+              <div class="video-time">8&colon;22</div>
+            </a>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <a href="https://www.youtube.com/c/markiplier" target="_blank">
+                <div class="channel-pfp-container">
+                  <img class="channel-pfp" src="Images/Channel-Icons/channel-2.jpeg" alt="channel-icon-2">
+                  <div class="channel-pfp-tooltip">
+                    <img class="channel-pfp" src="Images/Channel-Icons/channel-2.jpeg" alt="channel-icon-2">
+                    <p>
+                      <strong>Markiplier</strong> <br>
+                      <span style="color: rgb(170, 170, 170);">37&period;8M subscribers</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank">
+                  <p class="video-title">
+                    Try Not To Laugh Challenge &num;9
+                  </p>
+                </a>
+              </div>
+              <div class="author-div">
+                <a href="https://www.youtube.com/c/markiplier" target="_blank">
+                  <p class="video-author">
+                    Markiplier
+                  </p> <!-- inline element, e.g. "<strong>...</strong>" - appear within line of text -->
+                </a>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  19M views &middot; 4 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w" target="_blank">
+              <img class="thumbnail" src="Images/Thumbnails/thumbnail-3.webp" alt="thumbnail-3"/>
+              <div class="video-time">9&colon;13</div>
+            </a>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <a href="https://www.youtube.com/user/SSSniperWolf" target="_blank">
+                <div class="channel-pfp-container">
+                  <img class="channel-pfp" src="Images/Channel-Icons/channel-3.jpeg" alt="channel-icon-3">
+                  <div class="channel-pfp-tooltip">
+                    <img class="channel-pfp" src="Images/Channel-Icons/channel-3.jpeg" alt="channel-icon-3">
+                    <p>
+                      <strong>SSSniperWolf</strong> <br>
+                      <span style="color: rgb(170, 170, 170);">35&period;1M subscribers</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w" target="_blank">
+                  <p class="video-title">
+                    Crazy Tik Toks Taken Moments Before DISASTER
+                  </p>
+                </a>
+              </div>
+              <div class="author-div">
+                <a href="https://www.youtube.com/user/SSSniperWolf" target="_blank">
+                  <p class="video-author">
+                    SSSniperWolf
+                  </p>
+                </a>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  12M views &middot; 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=094y1Z2wpJg" target="_blank">
+              <img class="thumbnail" src="Images/Thumbnails/thumbnail-4.webp" alt="thumbnail-4"/>
+              <div class="video-time">22&colon;09</div>
+            </a>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <a href="https://www.youtube.com/c/veritasium" target="_blank">
+                <div class="channel-pfp-container">
+                  <img class="channel-pfp" src="Images/Channel-Icons/channel-4.jpeg" alt="channel-icon-4">
+                  <div class="channel-pfp-tooltip">
+                    <img class="channel-pfp" src="Images/Channel-Icons/channel-4.jpeg" alt="channel-icon-4">
+                    <p>
+                      <strong>Veritasium</strong> <br>
+                      <span style="color: rgb(170, 170, 170);">19&period;3M subscribers</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <a href="https://www.youtube.com/watch?v=094y1Z2wpJg" target="_blank">
+                  <p class="video-title">
+                    The Simplest Math Problem No One Can Solve &minus; Collatz Conjecture
+                  </p>
+                </a>
+              </div>
+              <div class="author-div">
+                <a href="https://www.youtube.com/c/veritasium" target="_blank">
+                  <p class="video-author">
+                    Veritasium
+                  </p>
+                </a>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  18M views &middot; 4 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" target="_blank">
+              <img class="thumbnail" src="Images/Thumbnails/thumbnail-5.webp" alt="thumbnail-5"/>
+              <div class="video-time">11&colon;17</div>
+            </a>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <a href="https://www.youtube.com/c/CSDojo" target="_blank">
+                <div class="channel-pfp-container">
+                  <img class="channel-pfp" src="Images/Channel-Icons/channel-5.jpeg" alt="channel-icon-5">
+                  <div class="channel-pfp-tooltip">
+                    <img class="channel-pfp" src="Images/Channel-Icons/channel-5.jpeg" alt="channel-icon-5">
+                    <p>
+                      <strong>CS Dojo</strong> <br>
+                      <span style="color: rgb(170, 170, 170);">1&period;95M subscribers</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" target="_blank">
+                  <p class="video-title">
+                    Kadane&apos;s Algorithm to Maximum Sum Subarray Problem
+                  </p>
+                </a>
+              </div>
+              <div class="author-div">
+                <a href="https://www.youtube.com/c/CSDojo" target="_blank">
+                  <p class="video-author">
+                    CS Dojo
+                  </p>
+                </a>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  519K views &middot; 5 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" target="_blank">
+              <img class="thumbnail" src="Images/Thumbnails/thumbnail-6.webp" alt="thumbnail-6"/>
+              <div class="video-time">19&colon;59</div>
+            </a>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA" target="_blank">
+                <div class="channel-pfp-container">
+                  <img class="channel-pfp" src="Images/Channel-Icons/channel-6.jpeg" alt="channel-icon-6">
+                  <div class="channel-pfp-tooltip">
+                    <img class="channel-pfp" src="Images/Channel-Icons/channel-6.jpeg" alt="channel-icon-6">
+                    <p>
+                      <strong>MrBeast</strong> <br>
+                      <span style="color: rgb(170, 170, 170);">448M subscribers</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" target="_blank">
+                  <p class="video-title">
+                    Anything You Can Fit In The Circle I&apos;ll Pay For
+                  </p>
+                </a>
+              </div>
+              <div class="author-div">
+                <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA" target="_blank"">
+                  <p class="video-author">
+                    MrBeast &checkmark;
+                  </p>
+                </a>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  141M views &middot; 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y" target="_blank">
+              <img class="thumbnail" src="Images/Thumbnails/thumbnail-7.webp" alt="thumbnail-7"/>
+              <div class="video-time">10&colon;13</div>
+            </a>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <a href="https://www.youtube.com/channel/UCP5tjEmvPItGyLhmjdwP7Ww" target="_blank">
+                <div class="channel-pfp-container">
+                  <img class="channel-pfp" src="Images/Channel-Icons/channel-7.jpeg" alt="channel-icon-7">
+                  <div class="channel-pfp-tooltip">
+                    <img class="channel-pfp" src="Images/Channel-Icons/channel-7.jpeg" alt="channel-icon-7">
+                    <p>
+                      <strong>RealLifeLore</strong> <br>
+                      <span style="color: rgb(170, 170, 170);">7&period;87M subscribers</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y" target="_blank">
+                  <p class="video-title">
+                    Why Planes Don't Fly Over Tibet
+                  </p>
+                </a>
+              </div>
+              <div class="author-div">
+                <a href="https://www.youtube.com/channel/UCP5tjEmvPItGyLhmjdwP7Ww" target="_blank">
+                  <p class="video-author">
+                    RealLifeLore
+                  </p>
+                </a>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  6&period;6M views &middot; 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=lFm4EM1juls" target="_blank">
+              <img class="thumbnail" src="Images/Thumbnails/thumbnail-8.webp" alt="thumbnail-8"/>
+              <div class="video-time">7&colon;12</div>
+            </a>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <a href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg" target="_blank">
+                <img class="channel-pfp" src="Images/Channel-Icons/channel-8.jpeg" alt="channel-icon-8">
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <a href="https://www.youtube.com/watch?v=lFm4EM1juls" target="_blank">
+                  <p class="video-title">
+                    Inside The World&apos;s Biggest Passenger Plane
+                  </p>
+                </a>
+              </div>
+              <div class="author-div">
+                <a href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg" target="_blank">
+                  <p class="video-author">
+                    Tech Vision
+                  </p>
+                </a>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  3&period;7M views &middot; 10 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc" target="_blank">
+              <img class="thumbnail" src="Images/Thumbnails/thumbnail-9.webp" alt="thumbnail-9"/>
+              <div class="video-time">13&colon;17</div>
+            </a>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <a href="https://www.youtube.com/c/OFFICIALTHENXSTUDIOS" target="_blank">
+                <img class="channel-pfp" src="Images/Channel-Icons/channel-9.jpeg" alt="channel-icon-9">
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc" target="_blank">
+                  <p class="video-title">
+                    The SECRET to Super Human STRENGTH
+                  </p>
+                </a>
+              </div>
+              <div class="author-div">
+                <a href="https://www.youtube.com/c/OFFICIALTHENXSTUDIOS" target="_blank">
+                  <p class="video-author">
+                    ThenX
+                  </p>
+                </a>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  20M views &middot; 3 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="Images/Thumbnails/thumbnail-10.webp" alt="thumbnail-10"/>
+            <div class="video-time">7&colon;53</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <img class="channel-pfp" src="Images/Channel-Icons/channel-10.jpeg" alt="channel-icon-10">
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <p class="video-title">
+                  How The World&apos;s Largest Cruise Ship Makes 30&comma;000 Meals Every Day
+                </p>
+              </div>
+              <div class="author-div">
+                <p class="video-author">
+                  Business Insider
+                </p>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  14M views &middot; 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="Images/Thumbnails/thumbnail-11.webp" alt="thumbnail-11"/>
+            <div class="video-time">4&colon;10</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <img class="channel-pfp" src="Images/Channel-Icons/channel-11.jpeg" alt="channel-icon-11">
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <p class="video-title">
+                  Dubai's Crazy Underwater Train and Other Things &num;Only in Dubai
+                </p>
+              </div>
+              <div class="author-div">
+                <p class="video-author">
+                  Destination Tips
+                </p>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  3M views &middot; 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="Images/Thumbnails/thumbnail-12.webp" alt="thumbnail-12"/>
+            <div class="video-time">4&colon;51</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <img class="channel-pfp" src="Images/Channel-Icons/channel-12.jpeg" alt="channel-icon-12">
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <p class="video-title">
+                  What would happen if you didn&apos;t drink water&quest; &minus; Mia Nacamulli
+                </p>
+              </div>
+              <div class="author-div">
+                <p class="video-author">
+                  TED&minus;Ed
+                </p>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  12M views &middot; 5 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="Images/Thumbnails/thumbnail-13.webp" alt="thumbnail-13"/>
+            <div class="video-time">9&colon;23</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <img class="channel-pfp" src="Images/Channel-Icons/channel-13.jpeg" alt="channel-icon-13">
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <p class="video-title">
+                  Is Chainsaw Man Movie Good
+                </p>
+              </div>
+              <div class="author-div">
+                <p class="video-author">
+                  penguinz0 &checkmark;
+                </p>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  459K views &middot; 10 hours ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="Images/Thumbnails/thumbnail-14.webp" alt="thumbnail-14"/>
+            <div class="video-time">1&colon;35</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <img class="channel-pfp" src="Images/Channel-Icons/channel-14.jpeg" alt="channel-icon-14">
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <p class="video-title">
+                  This needs to be shown some respect&period;&period;
+                </p>
+              </div>
+              <div class="author-div">
+                <p class="video-author">
+                  I Do Know Nothing &checkmark;
+                </p>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  8K views &middot; 3 hours ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="Images/Thumbnails/thumbnail-16.webp" alt="thumbnail-16"/>
+            <div class="video-time">25&colon;14</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <img class="channel-pfp" src="Images/Channel-Icons/channel-16.jpeg" alt="channel-icon-16">
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <p class="video-title">
+                  Eine ganze Folge voller toller Filme&excl; &minus; JustWatched
+                </p>
+              </div>
+              <div class="author-div">
+                <p class="video-author">
+                  BeHaind &checkmark;
+                </p>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  124K views &middot; 1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="Images/Thumbnails/thumbnail-17.webp" alt="thumbnail-17"/>
+            <div class="video-time">4&colon;22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <img class="channel-pfp" src="Images/Channel-Icons/channel-17.jpeg" alt="channel-icon-17">
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <p class="video-title">
+                  How to wake up early &lpar;pawithout snoozing&rpar;
+                </p>
+              </div>
+              <div class="author-div">
+                <p class="video-author">
+                  Ndup Mastery
+                </p>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  44K views &middot; 6 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="Images/Thumbnails/thumbnail-18.webp" alt="thumbnail-18"/>
+            <div class="video-time">3&colon;01</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <img class="channel-pfp" src="Images/Channel-Icons/channel-18.jpeg" alt="channel-icon-18">
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <p class="video-title">
+                  Crime 101 &VerticalLine; Official Trailer
+                </p>
+              </div>
+              <div class="author-div">
+                <p class="video-author">
+                  Amazon MGM Studios &checkmark;
+                </p>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  5&period;6M views &middot; 1 day ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="Images/Thumbnails/thumbnail-19.webp" alt="thumbnail-19"/>
+            <div class="video-time">4&colon;45</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <img class="channel-pfp" src="Images/Channel-Icons/channel-19.jpeg" alt="channel-icon-19">
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <p class="video-title">
+                  Caedrel Reacts To The Grand Finals Of ASI 2025
+                </p>
+              </div>
+              <div class="author-div">
+                <p class="video-author">
+                  Caedrel Clips
+                </p>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  42K views &middot; 12 days ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="Images/Thumbnails/thumbnail-20.webp" alt="thumbnail-20"/>
+            <div class="video-time">3&colon;11&colon;46</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <img class="channel-pfp" src="Images/Channel-Icons/channel-20.jpeg" alt="channel-icon-20">
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <p class="video-title">
+                  Let&apos;s work slow and easy
+                </p>
+              </div>
+              <div class="author-div">
+                <p class="video-author">
+                  roti&period; &#9835;
+                </p>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  1&period;6M views &middot; 4 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="Images/Thumbnails/thumbnail-21.webp" alt="thumbnail-21"/>
+            <div class="video-time">46&colon;35</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <img class="channel-pfp" src="Images/Channel-Icons/channel-21.jpeg" alt="channel-icon-21">
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <p class="video-title">
+                  a playlist for quiet autumn morning
+                </p>
+              </div>
+              <div class="author-div">
+                <p class="video-author">
+                  Helder
+                </p>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  955K views &middot; 1 year ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="Images/Thumbnails/thumbnail-22.webp" alt="thumbnail-22"/>
+            <div class="video-time">12&colon;00&colon;00</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-div">
+              <img class="channel-pfp" src="Images/Channel-Icons/channel-22.jpeg" alt="channel-icon-22">
+            </div>
+            <div class="video-info">
+              <div class="title-div">
+                <p class="video-title">
+                  Java Full Course for free ☕
+                </p>
+              </div>
+              <div class="author-div">
+                <p class="video-author">
+                  Bro Code &checkmark;
+                </p>
+              </div>
+              <div class="stats-div">
+                <p class="video-stats">
+                  13M views &middot; 4 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
